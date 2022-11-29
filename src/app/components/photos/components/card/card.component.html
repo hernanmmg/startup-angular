@@ -1,0 +1,11 @@
+<div class="photo-card" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="savedFavorite()">
+  <div class="photo-card__img" [ngStyle]="{'background-image': 'url(' + photo.previewURL + ')'}">
+  <div class="photo-card__shadow"></div>
+  <div class="photo-card__float">
+    <div class="photo-card__float__two">
+      <p class="mb-0"><img src="assets/svg/eye.svg" alt="eye icon" height="15" width="15"/><span>{{photo.views}}</span></p>
+      <p class="mb-0"><img src="assets/svg/like.svg" alt="heart icon" height="15" width="15"> <span>{{photo.likes}}</span></p>
+    </div>
+    <p class="mb-0">View detail</p>
+  </div>
+</div>

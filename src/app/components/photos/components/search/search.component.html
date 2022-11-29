@@ -1,0 +1,15 @@
+<div class="search-photo">
+  <form class="row g-3">
+    <div class="col-12">
+      <input class="form-control" placeholder="Ex. red roses" [(ngModel)]="q" name="q" (keyup.enter)="onSubmit()" maxlength="100">
+    </div>
+    <div class="col-12">
+      <select [(ngModel)]="catSelected" name="cat" class="form-select" multiple aria-label="multiple select example">
+        <option *ngFor="let category of categories" [value]="category">{{category}}</option>
+      </select>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary w-100" (click)="onSubmit()">Search</button>
+    </div>
+  </form>
+</div>

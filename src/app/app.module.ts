@@ -1,21 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { BolsiyoService } from 'src/services/bolsiyo.service';
 
-import { AppRoutingModule } from './app-route';
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './components/app-component/app.component';
-import { AppBolsiyoComponent } from './components/app-bolsiyo/bolsiyo.component';
+import {NgxLocalstorageDirectiveModule} from 'ngx-localstorage';
+import {HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppBolsiyoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    NgxLocalstorageDirectiveModule
   ],
-  providers: [BolsiyoService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

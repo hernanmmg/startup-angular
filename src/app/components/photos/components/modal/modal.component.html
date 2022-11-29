@@ -1,0 +1,23 @@
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Image detail</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img class="img-thumbnail mx-auto d-block mb-3" [src]="photo.webformatURL" alt="photo.tags" width="400">
+        <p class="mb-0"><strong>Views: </strong>{{photo.views}}</p>
+        <p class="mb-0"><strong>Likes: </strong>{{photo.likes}}</p>
+        <p class="mb-0"><strong>Tags: </strong> {{photo.tags}}</p>
+        <p class="mb-0"><strong>Comments: </strong>{{photo.comments}}</p>
+        <p class="mb-0"><strong>Downloads: </strong>{{photo.downloads}}</p>
+        <p class="mb-0"><strong>User: </strong>{{photo.user}}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
